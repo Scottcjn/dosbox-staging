@@ -34,7 +34,6 @@ target_sources(libdosboxcommon PRIVATE
   programs/choice.cpp
   programs/clip.cpp
   programs/help.cpp
-  programs/intro.cpp
   programs/keyb.cpp
   programs/loadfix.cpp
   programs/loadrom.cpp
