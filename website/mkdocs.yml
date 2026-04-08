@@ -65,6 +65,7 @@ plugins:
       skip_classes:
         - skip-lightbox
 
+  - offline
   - privacy:
       enabled: !ENV [OFFLINE_MANUAL, false]
   - optimize:
