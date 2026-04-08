@@ -34,6 +34,7 @@ libdos_sources = files(
     'programs/boot.cpp',
     'programs/choice.cpp',
     'programs/clip.cpp',
+    'programs/guide.cpp',
     'programs/help.cpp',
     'programs/keyb.cpp',
     'programs/loadfix.cpp',

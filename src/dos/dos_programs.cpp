@@ -9,6 +9,7 @@
 #include "programs/boot.h"
 #include "programs/choice.h"
 #include "programs/clip.h"
+#include "programs/guide.h"
 #include "programs/help.h"
 #include "programs/keyb.h"
 #include "programs/loadfix.h"
@@ -68,6 +69,7 @@ void DOS_SetupPrograms()
 	PROGRAMS_MakeFile("CLIP.EXE", ProgramCreate<CLIP>);
 	PROGRAMS_MakeFile("COMMAND.COM", SHELL_ProgramCreate);
 	PROGRAMS_MakeFile("CONFIG.COM", CONFIG_ProgramCreate);
+	PROGRAMS_MakeFile("GUIDE.COM", ProgramCreate<GUIDE>);
 	PROGRAMS_MakeFile("HELP.COM", ProgramCreate<HELP>);
 	PROGRAMS_MakeFile("KEYB.COM", ProgramCreate<KEYB>);
 	PROGRAMS_MakeFile("LOADFIX.COM", ProgramCreate<LOADFIX>);
