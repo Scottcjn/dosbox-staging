@@ -4,6 +4,7 @@
 
 # Other
 compile
+documentation
 build.log
 clean.log
 make.log
