@@ -14,5 +14,3 @@ runs:
       run: |
         OFFLINE=true mkdocs build --config-file website/mkdocs.yml \
                                   --site-dir ../documentation
-
-        ./scripts/tools/docs/localise-glightbox.py documentation .
