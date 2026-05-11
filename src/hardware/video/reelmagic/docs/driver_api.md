@@ -214,7 +214,7 @@ drivers perform a check to make sure they are not already loaded.
 
 ## Detection of FMPDRV.EXE From User Applications
 
-User applicaions detect the ReelMagic "FMPDRV.EXE" driver TSR presence
+User applications detect the ReelMagic "FMPDRV.EXE" driver TSR presence
 and interrupt number to use by doing something like this:
 ```
 for (int_num = 0x80; int_num < 0x100; ++int_num) {
@@ -355,7 +355,7 @@ seen Return to Zork call this subfunction. Returning zero and ignoring for now.
 
 #### Subfunction 0208h - Set User Data
 This sets arbitrary user data to associate with a media handle. Both `param1` and `param2` are stored
-with the given media handle, and can be retrived with command/function 0xA subfunction 0208h.
+with the given media handle, and can be retrieved with command/function 0xA subfunction 0208h.
 
 The return value does not appear to be checked. Returning zero and ignoring for now.
 
@@ -466,7 +466,7 @@ lower 16-bits.
 
 #### Subfunction 0208h - Get User Data
 This gets the arbitrary user data associated with a media handle. The `param1` (low) and `param2` (high)
-that were previously stored using command/funcion 0x9 subfunction 0208h on the given media handle is
+that were previously stored using command/function 0x9 subfunction 0208h on the given media handle is
 returned. The current implementation returns zero.
 
 #### Subfunction 0403h - Likely Get Decoded Picture Dimensions
@@ -527,7 +527,7 @@ There are four known parameters that are passed to the callback function:
 
 ### Calling Convention "A" (Register with `subfunc=0000h`)
 
-This calling convention passes the parameters in registers. The paramter/register mapping is assigned
+This calling convention passes the parameters in registers. The parameter/register mapping is assigned
 as follows:
 
 * BH=Command
@@ -608,7 +608,7 @@ No idea what this does. I am not (yet) calling it.
 # Physical Hardware
 
 For now, no port I/O calls have been implemented, but I left commented out some of the remaining port I/O
-handler code I was tinkering with when debugging. For now, I am taking a similiar approach to what DOSBox did
+handler code I was tinkering with when debugging. For now, I am taking a similar approach to what DOSBox did
 with MSCDEX, and the implementation of an emulated driver resides in DOSBox.
 
 

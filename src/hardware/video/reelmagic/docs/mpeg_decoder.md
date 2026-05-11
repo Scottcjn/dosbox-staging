@@ -15,11 +15,11 @@ because:
   3. It is difficult to write an emulator which can play the original unmodified
      games for this platform.
 
-By writing this document, my intent is to report all findings on this obsecure
+By writing this document, my intent is to report all findings on this obscure
 format so that this amazing technology can be emulated on modern devices. This
 way, people who have purchased games developed on this technology can still
 enjoy said games without the original hardware. Also, this helps preserve the
-history of PC computer gaming. Loosing something like this to time would be a
+history of PC computer gaming. Losing something like this to time would be a
 tragedy.
 
 This file documents what I have learned about this format and how to play these
@@ -90,7 +90,7 @@ according to ISO/IEC 11172-2 is 30000/1001 (~29.97) fps.
 Unfortunately, the exact details for recovering the `f_code` values in the
 MPEG-1 picture headers are not completely (yet?) understood. However, it is
 understood well enough in order to decode and play the "magical" MPEG-1 files
-for all known ReelMagic games in existance as of June 2022.
+for all known ReelMagic games in existence as of June 2022.
 
 The high-level function for recovering an `f_code` value in a "magical" MPEG-1
 'P' or 'B' picture header is as such:
@@ -129,7 +129,7 @@ and twice per every 'B' picture (forward and backward `f_code`)
 
 This approach requires random access to the complete "magical" MPEG-1 file
 because a picture matching specific criteria must be found in order to be
-able to start playing the file. This approach apperars to work well for
+able to start playing the file. This approach appears to work well for
 offline decode of a given file, but does not work well for an emulator as
 there are a lot of games that feed the MPEG-1 data to the decoder in 4k-
 sized chunks. This approach does not cover the case where an MPEG-1 file
@@ -154,7 +154,7 @@ dependency on other pictures. It is virtually a drop-in replacement for
 the recovery function mentioned above. The idea behind this approach is
 that each "magic key" value generates a predictable repeating pattern of
 delta values which can be summed to a picture's given `f_code` value to
-yield the correct `f_code` value. The delta value choosen in the pattern
+yield the correct `f_code` value. The delta value chosen in the pattern
 is based off the picture's TSN. The delta pattern itself is large as it
 repeats only after 56 TSN values. However, the delta pattern can be
 predicted on-the-fly by using a delta pattern of the delta pattern which
@@ -234,7 +234,7 @@ The formula for this is:
 This algorithm can be optimized for realtime video decoding by pre-
 generating the first 56 (0-55) TSN values for a given "magic key" and
 storing these in a lookup table for use at picture decode time. For any
-picture that is encounted with a TSN val > 55, the lookup TSN value
+picture that is encountered with a TSN val > 55, the lookup TSN value
 used is the picture's TSN value modulo 56.
 
 
@@ -264,7 +264,7 @@ for more information on this.
 The current implementation of the emulator uses the  "Find a Truthful
 `f_code` Approach" mentioned above. However, soon it will be updated
 to use the "Delta/Delta" approach as this is needed to ensure 100%
-compatibility accross all currently known ReelMagic games.
+compatibility across all currently known ReelMagic games.
 
 
 # Analyzing and Inspecting "Magical" MPEG-1 Files
