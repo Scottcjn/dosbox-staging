@@ -92,7 +92,7 @@ There are two common scenarios when making website/documentation changes:
 
 #### Making fixes or changes to the _current_ website/documentation
 
-- Raise a PR against the lastest _release branch_ (e.g. `releases/0.80.x`).
+- Raise a PR against the latest _release branch_ (e.g. `releases/0.80.x`).
 
 - Usually, you also want to forward-port the changes to the work-in-progress
   documentation of the next release, so raise a second PR against `main`
@@ -194,7 +194,7 @@ Make sure to always regenerate the CSS file after changing the SASS source,
 then check in both the `.css` and the `.scss` files.
 
 
-## General documenetation writing guidelines
+## General documentation writing guidelines
 
 ### Content 
 

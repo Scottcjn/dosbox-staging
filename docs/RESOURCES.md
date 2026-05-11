@@ -70,7 +70,7 @@ the following priority order:
     `dosbox` (executable) `"resources"subdirs/...` (on
     macOS:`../Resources/subdirs/...`)
 
-    This first instance should also be the prefered packaging layout for wrapped
+    This first instance should also be the preferred packaging layout for wrapped
     formats like FlatPak, Snap, AppImage, etc.
 
 2. Up one directory from the executable (which allows unit tests to access
