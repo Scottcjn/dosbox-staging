@@ -63,7 +63,7 @@ MPEG decoder. More information on this can be found in the MPEG decoder notes.
 ## Known Game Bugs
 
 Game bugs that are known to exist in both this emulator AND that also happen
-wich a real hardware setup are documented in the list of known game bugs.
+with a real hardware setup are documented in the list of known game bugs.
 This helps with not spending too much time chasing phantom issues.
 
 

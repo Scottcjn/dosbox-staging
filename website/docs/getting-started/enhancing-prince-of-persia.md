@@ -326,7 +326,7 @@ especially through headphones. There's even some reverb added to the in-game
 footsteps and sound effects, although to a much lesser extent.
 
 You might want to experiment with the `small` and `medium` reverb presets, as
-well as the the `light` and `strong` chorus settings.
+well as the `light` and `strong` chorus settings.
 
 !!! note "Purist alert!"
 

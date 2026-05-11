@@ -308,7 +308,7 @@ CODEPAGE 190  DUPLICATES 437    # United States   [Olivetti]
 CODEPAGE 210  DUPLICATES 737    # Greek-2         [DEC, Olivetti]
 
 # ****************************************************************************
-# Mapping aliases to accomodate characters missing in code pages
+# Mapping aliases to accommodate characters missing in code pages
 # ****************************************************************************
 
 # Provide pairs of code points here. Here is how the aliases work:
