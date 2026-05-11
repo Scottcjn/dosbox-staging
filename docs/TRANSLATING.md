@@ -114,7 +114,7 @@ entry.
 ### DOSBox Staging metadata entries
 
 DOSBox Staging needs some additional, non-standard metadata marked with the
-`#METADATA` keyword in both the the context (`msgctxt`) and location (`#:`)
+`#METADATA` keyword in both the context (`msgctxt`) and location (`#:`)
 fields, for example:
 
 ```po
