@@ -109,7 +109,7 @@ emulated by software.
 
 Quality realtime conversions of such unusual sample rates intrinsically
 require more CPU time than the chip emulation itself, so expect them to be the
-actual bootleneck of the emulation.
+actual bottleneck of the emulation.
 
 Also, sample rate conversions add delays to their outputs, which are not
 welcome to realtime processing.
@@ -287,10 +287,10 @@ oversampled D/A data.
 I guess the interpolator is a FIR filter that reuses the same DSP circuitry for
 gain and coefficient fixed-point multiplication, to save silicon area.
 
-The datasheet shows only the *magnitude versus freuquency response*.
-So, based on such information, I tried to match the reponse with
+The datasheet shows only the *magnitude versus frequency response*.
+So, based on such information, I tried to match the response with
 [Iowa Hills FIR Filter Designer 7.0](http://www.iowahills.com/8DownloadPage.html)
-by trial and error. The parameters I found do not look exacly as per the
+by trial and error. The parameters I found do not look exactly as per the
 diagram of the datasheet, but the actual response should not differ too much:
 
 ![Oversampler emulation versus datasheet](doc/oversample_filter_comparison.png)
