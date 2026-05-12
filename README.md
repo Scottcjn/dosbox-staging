@@ -260,7 +260,7 @@ git fetch origin "refs/notes/*:refs/notes/*"
 
 ## Website & documentation
 
-Please refer to the [documentation guide](DOCUMENTATION.md) before making
+Please refer to the [documentation guide](docs/DOCUMENTATION.md) before making
 changes to the website or the documentation.
 
 
